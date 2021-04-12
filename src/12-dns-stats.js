@@ -21,7 +21,7 @@
  *
  */
 // 12,7,8,14,4
-// function getDNSStats(domains) {
+function getDNSStats(/* domains */) {
 //   const res = [];
 //   const arr = domains.map((a) => a.split('.').reverse()).flat();
 //   console.log(arr);
@@ -37,7 +37,8 @@
 //   let values = Object.values(res);
 //   console.log('len',res.length);
 //   console.log('res', res);
-// }
+  throw new Error('Not implemented');
+}
 //
 // console.log(getDNSStats([
 //   'code.yandex.ru',
@@ -45,4 +46,4 @@
 //   'yandex.ru',
 // ]));
 
-// module.exports = getDNSStats;
+module.exports = getDNSStats;

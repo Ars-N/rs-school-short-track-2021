@@ -13,7 +13,7 @@
  * the output should be ["file", "file(1)", "image", "file(1)(1)", "file(2)"]
  *
  */
-// function renameFiles(names) {
+function renameFiles(/* names */) {
 //   names.map((a, i, res) => {
 //     if (names.indexOf(a) === names.lastIndexOf(a)) {
 //       return a;
@@ -32,7 +32,8 @@
 //   // }
 //   // recurs(names);
 //   return names;
-// }
+  throw new Error('Not implemented');
+}
 
 // const arrA = names.filter((el) => el === a)
 //   .map((val, ind) => (ind > 0 ? `${val}(${ind})` : a)).reverse();
@@ -44,4 +45,4 @@
 /* if (names.indexOf(a) === names.includes(a, i - 1)) {
   return a;
 } */
-// module.exports = renameFiles;
+module.exports = renameFiles;
